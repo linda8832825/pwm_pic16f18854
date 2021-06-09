@@ -19798,14 +19798,14 @@ void PIN_Initialize(){
     TRISCbits.TRISC6 = 1;
 
 
-    RA2PPS = 0x02;
-    RA3PPS = 0x03;
+    RA2PPS = 0x0E;
+    RA3PPS = 0x0E;
 
 
-
-
-
-
+    SSP1CLKPPS = 0x13;
+    RC3PPS = 0x14;
+    RC4PPS = 0x15;
+    SSP1DATPPS = 0x14;
 }
 void OSCILLATOR_Initialize(void)
 {

@@ -117,10 +117,18 @@
 [v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
 "23587
 [v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"31112
+[v _SSP1CLKPPS SSP1CLKPPS `VEuc  1 e 1 @3781 ]
+"31164
+[v _SSP1DATPPS SSP1DATPPS `VEuc  1 e 1 @3782 ]
 "31628
 [v _RA2PPS RA2PPS `VEuc  1 e 1 @3858 ]
 "31678
 [v _RA3PPS RA3PPS `VEuc  1 e 1 @3859 ]
+"32478
+[v _RC3PPS RC3PPS `VEuc  1 e 1 @3875 ]
+"32528
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @3876 ]
 "3 C:\Users\linda\MPLABXProjects\Pre_CHARGE.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {

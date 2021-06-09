@@ -37,6 +37,8 @@ _OSCFRQ 893 0 ABS 0
 __Lsfr3 0 0 ABS 0
 _RA2PPS F12 0 ABS 0
 _RA3PPS F13 0 ABS 0
+_RC3PPS F23 0 ABS 0
+_RC4PPS F24 0 ABS 0
 __Hsfr4 0 0 ABS 0
 __Lsfr4 0 0 ABS 0
 __Hsfr5 0 0 ABS 0
@@ -136,6 +138,8 @@ __Hbank9 0 0 BANK9 1
 __Lbank9 0 0 BANK9 1
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
+_SSP1CLKPPS EC5 0 ABS 0
+_SSP1DATPPS EC6 0 ABS 0
 __end_of__initialization 7FD 0 CODE 0
 _PWM6CONbits 38E 0 ABS 0
 __Hstack 0 0 STACK 2
@@ -220,12 +224,12 @@ cinit FFA FFF CODE FFA 0
 maintext FF0 FF9 CODE FF0 0
 %locals
 dist/default/production\Pre_CHARGE.X.production.o
-C:\Users\linda\AppData\Local\Temp\sdr4.s
-3235 7FD 0 CODE 0
-3238 7FD 0 CODE 0
-3244 7FD 0 CODE 0
+C:\Users\linda\AppData\Local\Temp\s32c.s
+3243 7FD 0 CODE 0
 3246 7FD 0 CODE 0
-3247 7FE 0 CODE 0
+3252 7FD 0 CODE 0
+3254 7FD 0 CODE 0
+3255 7FE 0 CODE 0
 main.c
 3 7F8 0 CODE 0
 4 7F8 0 CODE 0

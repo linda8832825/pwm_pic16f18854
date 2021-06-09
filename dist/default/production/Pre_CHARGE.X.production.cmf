@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\linda\AppData\Local\Temp\sdr4.o
+$C:\Users\linda\AppData\Local\Temp\s32c.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 $dist/default/production\Pre_CHARGE.X.production.o
@@ -99,11 +99,11 @@ STRING 800-FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Pre_CHARGE.X.production.o
-7FD cinit CODE >3235:C:\Users\linda\AppData\Local\Temp\sdr4.s
-7FD cinit CODE >3238:C:\Users\linda\AppData\Local\Temp\sdr4.s
-7FD cinit CODE >3244:C:\Users\linda\AppData\Local\Temp\sdr4.s
-7FD cinit CODE >3246:C:\Users\linda\AppData\Local\Temp\sdr4.s
-7FE cinit CODE >3247:C:\Users\linda\AppData\Local\Temp\sdr4.s
+7FD cinit CODE >3243:C:\Users\linda\AppData\Local\Temp\s32c.s
+7FD cinit CODE >3246:C:\Users\linda\AppData\Local\Temp\s32c.s
+7FD cinit CODE >3252:C:\Users\linda\AppData\Local\Temp\s32c.s
+7FD cinit CODE >3254:C:\Users\linda\AppData\Local\Temp\s32c.s
+7FE cinit CODE >3255:C:\Users\linda\AppData\Local\Temp\s32c.s
 7F8 maintext CODE >3:C:\Users\linda\MPLABXProjects\Pre_CHARGE.X\main.c
 7F8 maintext CODE >4:C:\Users\linda\MPLABXProjects\Pre_CHARGE.X\main.c
 7F9 maintext CODE >5:C:\Users\linda\MPLABXProjects\Pre_CHARGE.X\main.c
@@ -128,24 +128,24 @@ __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\linda\AppData\Local\Temp\sdr4.o
+___sp 0 0 STACK 2 stack C:\Users\linda\AppData\Local\Temp\s32c.o
 _main FF0 0 CODE 0 maintext dist/default/production\Pre_CHARGE.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Pre_CHARGE.X.production.o
-start 4 0 CODE 0 init C:\Users\linda\AppData\Local\Temp\sdr4.o
+start 4 0 CODE 0 init C:\Users\linda\AppData\Local\Temp\s32c.o
 __size_of_main 0 0 ABS 0 - dist/default/production\Pre_CHARGE.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sdr4.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sdr4.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sdr4.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sdr4.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sdr4.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sdr4.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\s32c.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\s32c.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\s32c.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\s32c.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\s32c.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\s32c.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Pre_CHARGE.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 21EF 0 ABS 0 - C:\Users\linda\AppData\Local\Temp\sdr4.o
-___stacklo 2000 0 ABS 0 - C:\Users\linda\AppData\Local\Temp\sdr4.o
+___stackhi 21EF 0 ABS 0 - C:\Users\linda\AppData\Local\Temp\s32c.o
+___stacklo 2000 0 ABS 0 - C:\Users\linda\AppData\Local\Temp\s32c.o
 start_initialization FFA 0 CODE 0 cinit dist/default/production\Pre_CHARGE.X.production.o
 _PWM6CONbits 38E 0 ABS 0 - dist/default/production\Pre_CHARGE.X.production.o
 _OSCFRQ 893 0 ABS 0 - dist/default/production\Pre_CHARGE.X.production.o
@@ -153,7 +153,9 @@ _TRISAbits 11 0 ABS 0 - dist/default/production\Pre_CHARGE.X.production.o
 _TRISCbits 13 0 ABS 0 - dist/default/production\Pre_CHARGE.X.production.o
 _RA2PPS F12 0 ABS 0 - dist/default/production\Pre_CHARGE.X.production.o
 _RA3PPS F13 0 ABS 0 - dist/default/production\Pre_CHARGE.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\linda\AppData\Local\Temp\sdr4.o
+_RC3PPS F23 0 ABS 0 - dist/default/production\Pre_CHARGE.X.production.o
+_RC4PPS F24 0 ABS 0 - dist/default/production\Pre_CHARGE.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\linda\AppData\Local\Temp\s32c.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -283,7 +285,7 @@ __S1 0 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\linda\AppData\Local\Temp\sdr4.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\linda\AppData\Local\Temp\s32c.o
 __Lbank10 0 0 BANK10 1 bank10 -
 __Lbank11 0 0 BANK11 1 bank11 -
 __Lbank12 0 0 BANK12 1 bank12 -
@@ -309,9 +311,11 @@ __Lbank31 0 0 BANK31 1 bank31 -
 __pmaintext FF0 0 CODE 0 maintext dist/default/production\Pre_CHARGE.X.production.o
 __Lbigram 0 0 ABS 0 bigram -
 __Lcommon 0 0 ABS 0 common -
+_SSP1CLKPPS EC5 0 ABS 0 - dist/default/production\Pre_CHARGE.X.production.o
 _OSCCON1 88D 0 ABS 0 - dist/default/production\Pre_CHARGE.X.production.o
 _OSCCON3 88F 0 ABS 0 - dist/default/production\Pre_CHARGE.X.production.o
 _OSCTUNE 892 0 ABS 0 - dist/default/production\Pre_CHARGE.X.production.o
+_SSP1DATPPS EC6 0 ABS 0 - dist/default/production\Pre_CHARGE.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -

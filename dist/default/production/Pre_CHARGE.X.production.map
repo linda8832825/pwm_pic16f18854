@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.20\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\Pre_CHARGE.X.production.sym \
   --cmf=dist/default/production\Pre_CHARGE.X.production.cmf -z -Q16F18854 \
-  -oC:\Users\linda\AppData\Local\Temp\sdr4.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\linda\AppData\Local\Temp\s32c.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Pre_CHARGE.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=02000h-021EFh -pstack=STACK \
   -ACODE=00h-07FFhx2 -ASTRCODE=00h-0FFFh -ASTRING=00h-0FFhx16 \
@@ -29,7 +29,7 @@ Linker command line:
   -AIDLOC=08000h-08003h -DIDLOC=2 -preset_vec=00h,intentry,init,end_init \
   -ppowerup=CODE -pcinit=CODE -pfunctab=ENTRY -AEEDATA=00h-0FFh/0F000h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\linda\AppData\Local\Temp\sdr4.o \
+  -DENTRY=2 -k C:\Users\linda\AppData\Local\Temp\s32c.o \
   dist/default/production\Pre_CHARGE.X.production.o 
 
 Object code version is 3.11
@@ -39,7 +39,7 @@ Machine type is 16F18854
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\linda\AppData\Local\Temp\sdr4.o
+C:\Users\linda\AppData\Local\Temp\s32c.o
                 end_init                              2        2        2        0       0
                 reset_vec                             0        0        2        0       0
 dist/default/production\Pre_CHARGE.X.production.o
@@ -294,6 +294,10 @@ _PR2                     (abs)        028D
 _PWM6CONbits             (abs)        038E
 _RA2PPS                  (abs)        0F12
 _RA3PPS                  (abs)        0F13
+_RC3PPS                  (abs)        0F23
+_RC4PPS                  (abs)        0F24
+_SSP1CLKPPS              (abs)        0EC5
+_SSP1DATPPS              (abs)        0EC6
 _T2CONbits               (abs)        028E
 _TRISAbits               (abs)        0011
 _TRISCbits               (abs)        0013

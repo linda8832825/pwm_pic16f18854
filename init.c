@@ -33,14 +33,14 @@ void PIN_Initialize(){
     TRIS_RX      = INPUT;
 
             
-    RA2PPS = 0x02;
-    RA3PPS = 0x03;
+    RA2PPS = 0x0E;//讓RA2指向到PWM6OUT
+    RA3PPS = 0x0E;//讓RA3指向到PWM6OUT
     
             
-//    SSP1CLKPPS = 0x13;   //RC3->MSSP1:SCL1;    
-//    RC3PPS = 0x13;   //RC3->MSSP1:SCL1;    
-//    RC4PPS = 0x14;   //RC4->MSSP1:SDA1;    
-//    SSP1DATPPS = 0x14;   //RC4->MSSP1:SDA1;    
+    SSP1CLKPPS = 0x13;   //RC3->MSSP1:SCL1;    
+    RC3PPS = 0x14;   //RC3->MSSP1:SCL1;    
+    RC4PPS = 0x15;   //RC4->MSSP1:SDA1;    
+    SSP1DATPPS = 0x14;   //RC4->MSSP1:SDA1;     
 }
 void OSCILLATOR_Initialize(void)
 {

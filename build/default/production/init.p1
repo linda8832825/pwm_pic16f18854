@@ -88,6 +88,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 "31678
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 31678: extern volatile unsigned char RA3PPS __attribute__((address(0xF13)));
 [v _RA3PPS `Vuc ~T0 @X0 0 e@3859 ]
+"31112
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 31112: extern volatile unsigned char SSP1CLKPPS __attribute__((address(0xEC5)));
+[v _SSP1CLKPPS `Vuc ~T0 @X0 0 e@3781 ]
+"32478
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 32478: extern volatile unsigned char RC3PPS __attribute__((address(0xF23)));
+[v _RC3PPS `Vuc ~T0 @X0 0 e@3875 ]
+"32528
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 32528: extern volatile unsigned char RC4PPS __attribute__((address(0xF24)));
+[v _RC4PPS `Vuc ~T0 @X0 0 e@3876 ]
+"31164
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 31164: extern volatile unsigned char SSP1DATPPS __attribute__((address(0xEC6)));
+[v _SSP1DATPPS `Vuc ~T0 @X0 0 e@3782 ]
 "23241
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 23241: extern volatile unsigned char OSCCON1 __attribute__((address(0x88D)));
 [v _OSCCON1 `Vuc ~T0 @X0 0 e@2189 ]
@@ -1735,11 +1747,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;init.c: 33:     TRISCbits.TRISC6 = 1;
 [e = . . _TRISCbits 0 6 -> -> 1 `i `uc ]
 "36
-[; ;init.c: 36:     RA2PPS = 0x02;
-[e = _RA2PPS -> -> 2 `i `uc ]
+[; ;init.c: 36:     RA2PPS = 0x0E;
+[e = _RA2PPS -> -> 14 `i `uc ]
 "37
-[; ;init.c: 37:     RA3PPS = 0x03;
-[e = _RA3PPS -> -> 3 `i `uc ]
+[; ;init.c: 37:     RA3PPS = 0x0E;
+[e = _RA3PPS -> -> 14 `i `uc ]
+"40
+[; ;init.c: 40:     SSP1CLKPPS = 0x13;
+[e = _SSP1CLKPPS -> -> 19 `i `uc ]
+"41
+[; ;init.c: 41:     RC3PPS = 0x14;
+[e = _RC3PPS -> -> 20 `i `uc ]
+"42
+[; ;init.c: 42:     RC4PPS = 0x15;
+[e = _RC4PPS -> -> 21 `i `uc ]
+"43
+[; ;init.c: 43:     SSP1DATPPS = 0x14;
+[e = _SSP1DATPPS -> -> 20 `i `uc ]
 "44
 [; ;init.c: 44: }
 [e :UE 1564 ]
